@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Electrolize&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Electrolize", sans-serif;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+/*All Home Page banners*/
+section.banners {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  border: 3px solid rgb(2, 2, 2);
+}
+/*ITR Banner*/
+section.home-itr {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0370ae 0%, #60bcb1 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.home-itr-left {
+  width: 60%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+}
+.home-itr-left h1 {
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home-itr-left p {
+  color: #ffffff;
+  width: 600px;
+  margin-left: 130px;
+  font-size: 1.1rem;
+  padding-bottom: 50px;
+  line-height: 28px;
+}
+.itr-try,
+.article-read {
+  padding: 2px;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(9, 9, 9);
+  border: 3px outset rgb(83, 202, 235);
+  transition: all 0.5s ease 0s;
+}
+.home-itr-left a:hover,
+.home-article-right a:hover {
+  box-shadow: 1px 1px 3px rgb(4, 4, 4);
+}
+.home-itr-right {
+  width: 40%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.home-itr-right img {
+  margin-top: 75px;
+  margin-right: 60px;
+  width: 450px;
+  border: 0.5rem outset rgb(83, 202, 235);
+  box-shadow: 4px 4px 9px rgb(4, 4, 4);
+}
+/*About*/
+section.about-us {
+  margin-top: 40px;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+.about-left {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+  text-align: center;
+}
+.about-left h1 {
+  text-decoration: underline;
+  margin-right: 145px;
+  padding-bottom: 20px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.about-left p {
+  text-align: left;
+  width: 600px;
+  margin-top: 20px;
+  margin-left: 130px;
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+  line-height: 28px;
+}
+.about-right {
+  width: 40%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.about-right img {
+  margin-top: 30px;
+  margin-left: 80px;
+  width: 230px;
+  border: 0.4rem outset rgb(255, 255, 255);
+  box-shadow: 4px 4px 9px rgb(4, 4, 4);
+}
+.about-right p {
+  text-align: center;
+
+  width: 400px;
+  margin-top: 55px;
+  margin-left: 0px;
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+  line-height: 28px;
+}
+/*Article banner*/
+section.home-article {
+  background-color: #0093e9;
+  background-image: linear-gradient(340deg, #0370ae 0%, #60bcb1 100%);
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+.home-article-left {
+  width: 40%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.home-article-left img {
+  margin-top: 100px;
+  margin-left: 80px;
+  width: 430px;
+  border: 0.5rem outset rgb(83, 202, 235);
+  box-shadow: 4px 4px 9px rgb(4, 4, 4);
+}
+.home-article-right {
+  width: 60%;
+  height: 300px;
+
+  text-align: center;
+  margin-top: 80px;
+  padding: 40px;
+}
+.home-article-right h1 {
+  padding-bottom: 20px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home-article-right p {
+  color: #ffffff;
+  width: 600px;
+  margin-left: 130px;
+  font-size: 1.1rem;
+  padding-bottom: 50px;
+  line-height: 28px;
+}
+/*Calculator banner white*/
+.cal-h {
+  text-align: center;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.home-cal {
+  margin-top: 25px;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+}
+.cal-left {
+  width: 60%;
+  height: 300px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.cal-left h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: rgb(52, 176, 116);
+}
+.cal-left a{
+    text-decoration: underline;
+}
+.cal-left a:hover{
+    text-decoration: 3px underline;
+}
+.cal-left p{
+    text-align: left;
+    width: 350px;
+    margin-top: 10px;
+    margin-left:290px;
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+    line-height: 28px;
+}
+.cal-right {
+  width: 40%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.cal-right img {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 430px;
+  border: 0.4rem outset rgb(255, 255, 255);
+  box-shadow: 4px 4px 9px rgb(4, 4, 4);
+}
+.foot{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    text-align: center;
+}
+.foot p{
+    margin-top: px;
+    color: rgb(95, 231, 165);
+}
