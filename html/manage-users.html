@@ -9,7 +9,7 @@
     <meta name="description" content="Taxation Guides and Financial Updates">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- FAVICON -->
@@ -45,33 +45,79 @@
         </div>
     </nav>
     <!-- ========== END OF NAV ========== -->
-    
-    <section class="form_section">
-        <div class="container form_section-container">
-            <h2>Edit Post</h2>
-            <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="Title">
-                <select>
-                    <option value="1">Taxation Guide</option>
-                    <option value="2">Stock Market</option>
-                    <option value="3">Finance</option>
-                    <option value="4">Blog</option>
-                </select>
-                <textarea rows="10" placeholder="Body"></textarea>
-                <div class="form_control inline">
-                    <input type="checkbox" id="is_featured">
-                    <label for="is_featured" >Featured</label>
-                </div>
-                <div class="form_control">
-                    <label for="thumbnail">Change Thumbnail</label>
-                    <input type="file" id="thumbnail">
-                </div>
-                <button type="submit" class="btn">Update Post</button>
-            </form>
+
+    <section class="dashboard">
+        <div class="container dashboard_container">
+            <button id="show_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-right"></i></button>
+            <button id="hide_sidebar-btn" class="sidebar_toggle"><i class="uil uil-angle-left"></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="add-post.html"><i class="uil uil-pen"></i>
+                            <h5>Add Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html"><i class="uil uil-postcard"></i>
+                            <h5>Manage Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-user.html"><i class="uil uil-plus"></i>
+                            <h5>Add User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html" class="active"><i class="uil uil-users-alt"></i>
+                            <h5>Manage User</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-category.html"><i class="uil uil-edit"></i>
+                            <h5>Add Category</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-categories.html"><i class="uil uil-list-ul"></i>
+                            <h5>Manage Category</h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Manage Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                            <th>Admin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aryan</td>
+                            <td>AryaG</td>
+                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Shivam</td>
+                            <td>Shyama</td>
+                            <td><a href="edit-user.html" class="btn sm">Edit</a></td>
+                            <td><a href="delete-user.html" class="btn sm danger">Delete</a></td>
+                            <td>No</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </main>
         </div>
     </section>
-    
-    <!-- ========== END OF SECTION ========== -->
+
     <footer>
         <div class="footer_socials">
             <a href="https://youtube.com" target="_blank"><i class="uil uil-youtube"></i></i></a>
@@ -89,7 +135,7 @@
                     <li><a href="category-post.html">Blog</a></li>
                 </ul>
             </article>
-            
+
             <article>
                 <h4>Blog</h4>
                 <ul>
@@ -109,7 +155,7 @@
                     <li><a href="">Visit</a></li>
                 </ul>
             </article>
-            
+
             <article>
                 <h4>Permalinks</h4>
                 <ul>
@@ -129,6 +175,3 @@
 
     <!-- LINKING JS -->
     <script src="./main.js"></script>
-</body>
-
-</html>
